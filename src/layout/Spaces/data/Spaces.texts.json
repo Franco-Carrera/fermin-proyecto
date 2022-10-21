@@ -1,0 +1,74 @@
+{
+  "texts": {
+    "GraphicAltDetail": "Ilustración circular en sección del detalle de trabajos, sobre la cual predominan los colores amarillo y celeste",
+    "GraphicRectangle": "Gráfico de rectángulo que acompaña a los textos en esta sección de detalle",
+
+    "Cards": {
+      "title": "¿Cómo trabajo?",
+      "graphic01": "Imagen que presenta el numero 01 referente a la sección del detalle de Trabajos",
+
+      "graphic01Card": "Icono 01 presenta la primera temática",
+      "subtitleFirst": "Diagnóstico",
+      "cardOne": "Es la primera instancia de trabajo. Recolectamos toda la información relevante del nicho; mercado, competencia, cliente ideal y necesidades del cliente.",
+      "subtitleSecond": "Estrategia",
+      "graphic02Card": "Icono 02 presenta la segunda temática",
+      "cardTwo": "Recogida y analizada la información de nuestro cliente, se confecciona la Estrategia a desarrollar. Esta variará según sus necesidades del cliente",
+      "graphic03Card": "Icono 03 presenta la tercera temática",
+      "subtitleThree": "Creación",
+      "cardThree": "Superadas las dos primeras instancias pasamos a crear contendio digital: posteos, carrusel, reels. Cada posteo se elabora con un objetivo en sí mismo, respondiendo a un objetivo macro."
+    },
+    "Events": {
+      "imageEventOne": "Imagen de color celeste, en la cual se hace una invitación al evento la mulata",
+      "imageEventTwo": "Imagen de color celeste azulado, en la cual se hace una invitación al evento de la comunidad ",
+      "imageEventThree": "Imagen de color celeste azulado, en la cual se presenta el festival de la víspera",
+      "imageEventFour": "Imagen de color celeste azulado, donde se invita a la música para eventos"
+    },
+    "Habilities": {
+      "skillOne": "Adobe Photoshop",
+      "skillTwo": "Adobe Illustrator",
+      "skillThree": "Corel Draw",
+      "skillFour": "Adobe inDesign",
+      "skillFive": "Adobe Lightroom",
+      "skillSix": "Sony Vegas Pro",
+      "skillSeven": "Canva"
+    },
+
+    "Design": {
+      "titleDesign": "Diseño",
+      "allParrafo": "A lo largo de mi carrera me ha tocado trabajar con una amplia gama de clientes que van desde espacios culturales hasta comercios como restaurantes, centros de estética y muchos más.",
+      "firstParrafo": "A lo largo de mi carrera me ha tocado trabajar con",
+      "secondParrafo": "una amplia gama de clientes que van desde espacios",
+      "threeParrafo": "culturales hasta comercios como restaurantes,",
+      "fourParrafo": "centros de estética y muchos más.",
+      "imagenDesign": "imagen dinámica que varía desde presentar encuentros teatrales, hasta flyers, en el area de diseño."
+    },
+
+    "Galery": {
+      "behance": "Icono de red social behance",
+      "flickr": "Icono de flickr",
+
+      "title": "Fotografía",
+      "descriptionFirst": "Me apasiona el mundo de la fotografía y siempre me resultó una bastión fundamental para poder complementar con el diseño. Lo que más me gusta es la",
+      "descriptionSecond": "fotografía del tipo documental. He trabajado en recitales, obras de teatro y de más.",
+
+      "themeOne": "Teatro",
+      "themeTwo": "Música",
+      "themeThree": "Retratos",
+      "themeFour": "Naturaleza",
+
+      "FigureOne": "Imagen de una mujer recostada sobre un árbol con un gesto de llanto",
+      "FigureTwo": "Imagen de una mujer en primer plano que acompaña su accesorio de payaso con un gesto dramático",
+      "FigureThree": "Imagen de tres mujeres que caminan sobre la calle de espaldas a la cámara",
+      "ImgGalery": "Imagen dinámica en el area de fotografía, que presenta temas como retratos o música.",
+
+      "closeModal": "Ícono para cerrar el modal",
+      "arrowRightModal": "Ícono para desplazarse a la imagen posterior",
+      "arrowLeftModal": "Ícono para desplazarse a la imagen anterior",
+
+      "invitationTitle": "¿Te gustaría ver más? ¡Seguime!"
+    },
+    "Modal": {
+      "imgModal": "Imagen de modal dinámica en seccion detalle de galería."
+    }
+  }
+}

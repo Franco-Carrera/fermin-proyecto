@@ -1,0 +1,77 @@
+.backdrop-filter-row-wrap-picture {
+  left: 11px;
+  width: 94%;
+}
+.backdrop-filter-wrap-picture {
+  left: 11px;
+  width: 97%;
+  height: 99%;
+}
+.backdrop-filter-picture-four {
+  height: 99.5%;
+}
+
+.container main {
+  padding: 0rem 1.5rem 0rem 2rem;
+}
+
+.detail__container__picture {
+  width: 312px;
+  padding: 0rem 1rem;
+  height: 428px;
+  position: relative;
+}
+.detail__events {
+  display: flex;
+  align-self: flex-end;
+}
+
+.detail__container__picture__four {
+  width: 100%;
+  position: relative;
+  height: max-content;
+}
+
+picture .picture__four {
+  width: 100%;
+  object-fit: contain;
+}
+
+picture .picture__three {
+  height: 77.825rem;
+}
+
+.rectangle__detail {
+  padding-left: 7rem;
+}
+
+.--reset {
+  height: max-content;
+  width: auto;
+}
+
+.row__wrap {
+  margin-bottom: 1.8rem;
+}
+
+.row__wrap picture img {
+  background-color: #0094ff;
+  height: 100%;
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2120px) {
+  /* detail-events*/
+  /* .detail__container__picture {
+    width: 400px;
+  } */
+
+  .detail__container__picture__four {
+    width: 50%;
+  }
+
+  .--reset {
+    height: max-content;
+    /* width: auto; */
+    width: 626px;
+  }
+}

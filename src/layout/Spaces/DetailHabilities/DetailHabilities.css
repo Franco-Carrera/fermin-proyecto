@@ -1,0 +1,36 @@
+.article__skills__habilities {
+  padding: 3rem 0rem 0rem 3.5rem;
+}
+
+.circle__five {
+  max-width: max-content;
+  padding-right: 15rem;
+  height: 92rem;
+}
+
+.circle__five > div > svg {
+  width: 60.5rem;
+  height: max-content;
+}
+
+.main__habilities {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.list__skills__habilities {
+  padding-top: 5rem;
+}
+
+.item__list__skill {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.item__list__skill span {
+  padding: 1rem;
+  margin-left: 2rem;
+  font-size: 18px;
+  font-weight: 800;
+}

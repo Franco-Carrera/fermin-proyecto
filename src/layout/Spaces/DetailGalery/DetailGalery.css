@@ -1,0 +1,153 @@
+/******Site styles******/
+.circle__six {
+  max-width: max-content;
+}
+.circle__six > div > svg {
+  width: 67rem;
+  height: 24rem;
+  position: relative;
+  /* bottom: -35px; */
+}
+
+.detail__galery {
+  /* min-height: 110vh; */
+  background-image: url(../../../assets/image/papelBlancoFondo_auto_x2.jpg);
+}
+
+.figure__img__three {
+  grid-area: imagen3;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 7rem;
+  /* min-height: 34vh; */
+}
+
+.galery__behance__icon {
+  height: 19.95px;
+  width: 30px;
+  padding-bottom: 0.1rem;
+  fill: #313332;
+}
+
+.galery__flick__icon {
+  margin-left: 5vh;
+}
+.galery__flick__icon > div svg {
+  height: 21.25px;
+}
+
+.galery__icons__items {
+  display: inline;
+}
+.galery__icons__items li {
+  padding: 8vh 0vh 0vh 0vh;
+  display: inline-block;
+  max-width: 50%;
+}
+
+.galery__photography__container {
+  padding: 4.6rem 4.2rem 0rem 8.2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 2.5% 45% 45%);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "rectangle imagen0 imagen1"
+    "rectangle imagen3 imagen3"
+    "rectangle imagen2 imagen4";
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+/* .galery__desing__container figure:nth-child(4) {
+  grid-area: imagen3;
+} */
+.galery__desing__container figure:nth-child(4) img {
+  /* width: 100%; */ /*de IDC.css*/
+  height: 60%;
+}
+
+.galery__text__top > h1 {
+  padding-bottom: 6rem;
+}
+.galery__text__top small {
+  font-size: 16px;
+  display: block;
+}
+.galery__text__top strong {
+  font-weight: 800;
+}
+
+.galery__types__fotography {
+  padding-top: 6.5rem;
+}
+
+.galery__footer__invitation {
+  padding: 6.5rem 0rem 0rem 12.8rem;
+}
+.galery__footer__invitation h3 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.rectangle__galery {
+  width: 2.5rem;
+  grid-area: rectangle;
+}
+
+/************Components***************/
+
+/************Switches*******************/
+.galery__types__fotography aside {
+  margin: 0 auto;
+  box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  max-width: max-content;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 27px;
+}
+
+.radio {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio__label {
+  padding: 8px 16px;
+  color: #019eff;
+  background-color: #ffffff;
+
+  cursor: pointer;
+
+  transition: background-color 0.1s;
+}
+
+.radio__input:checked + .radio__label {
+  background-color: #019eff;
+  color: #ffffff;
+}
+
+/************Modal**********************/
+.modal__container[id|="trabajo"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__img__three {
+  height: 526px;
+}
+
+.modal__content img:nth-child(4) {
+  height: 480px;
+}

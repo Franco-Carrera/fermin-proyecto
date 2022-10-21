@@ -1,0 +1,25 @@
+{
+  "texts": {
+    "home": {
+      "button": "Ver más",
+      "pictureFermin": "Imagen de Fermín Epele",
+      "graphicAlt": "Ilustración de un círculo compuesto con los colores del sitio",
+
+      "firstSection": {
+        "button": "Ver trabajos",
+        "sloganFirstName": "Fermín",
+        "sloganLastName": "Epele",
+        "subSlogan": "Diseñador en",
+        "subSloganTwo": "comunicación visual",
+        "rectangle": "primer rectángulo ubicado en la columna titular",
+        "rectangleTwo": "segundo rectángulo ubicado en la columna titular",
+        "rectangleThree": "tercer rectángulo ubicado en la columna titular"
+      },
+      "secondSection": {
+        "graphic02": "Imagen que presenta el numero referente a la sección de sobre mí",
+        "titleAbout": "Sobre mí",
+        "descriptionAbout": "¡Hola! Mi nombre es Fermín y soy diseñador en comunicación visual, fotógrafo y especialista en comunicación digital y redes."
+      }
+    }
+  }
+}

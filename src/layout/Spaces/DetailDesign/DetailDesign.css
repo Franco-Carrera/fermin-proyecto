@@ -1,0 +1,74 @@
+.--img__work {
+  padding-right: 5rem;
+}
+
+.img__one__work {
+  width: 12rem;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 10rem 0rem 6rem 6rem; */
+  padding: 14rem 0rem 6rem 6rem;
+}
+
+.work .main__top__info {
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: 74%; */
+  flex-basis: 95%;
+}
+
+/* .work__header {
+  display: flex;
+  flex-direction: row;
+  font-weight: 800;
+  align-items: flex-end;
+} */
+
+/* .work__header h1 {
+  margin-left: 1.5rem;
+} */
+
+/* .work__text {
+  margin-top: 7rem;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* .work__text aside {
+  font-size: 1.8rem;
+  white-space: break-spaces;
+  padding: 1vh 0vh 1vh 4vh;
+} */
+
+.work__picture {
+  z-index: 31;
+}
+
+.work__picture > img {
+  width: 84%;
+  z-index: 657;
+}
+
+.galery__works__main img {
+  height: 90%;
+}
+
+.itemDataImg {
+  width: 328px;
+  /* no se si esta aplicando esta clase */
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2120px) {
+  /* detail-galery-design*/ /*Work*/
+  .work__text {
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+  .work__text aside {
+    padding-left: 2vh;
+  }
+}

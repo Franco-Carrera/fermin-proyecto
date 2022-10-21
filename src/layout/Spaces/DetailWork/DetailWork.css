@@ -1,0 +1,82 @@
+.arrowLeftWork {
+  max-width: max-content;
+}
+.arrowLeftWork > div > svg {
+  width: 5rem;
+  height: 28.91px;
+}
+
+.circle__four > div > svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 67rem;
+  max-height: 81rem;
+}
+
+.detail__card {
+  background-color: #ffffff;
+  margin-right: 9vh;
+  box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 370px;
+  height: 400px;
+  z-index: 11;
+}
+
+.detail__card h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.detail__card p {
+  text-align: left;
+  white-space: break-spaces;
+  width: 76%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  line-height: 38.25px; /*utilitie*/
+  font-size: 20px;
+}
+
+.detail__card__top {
+  display: inline-flex;
+  margin: 3rem 0rem 1rem 4rem;
+  align-items: center;
+}
+.detail__card__top h2 {
+  margin-left: 1.4rem;
+}
+
+.detail__work__01__and__text {
+  display: inherit;
+  flex-basis: 80%;
+  align-items: flex-end;
+  padding-top: 9rem;
+}
+.detail__work__01__and__text h1 {
+  margin: 5rem 0rem 0rem 3rem;
+}
+
+.detail__work__01__and__text img {
+  max-width: 12rem;
+  height: 98px;
+}
+
+.detail__row__work {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 7rem;
+}
+
+.mainDetail section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.mainDetail {
+  padding: 4rem 4rem 0rem 6rem;
+}
