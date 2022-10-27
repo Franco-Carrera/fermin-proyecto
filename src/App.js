@@ -31,4 +31,4 @@ export default App;
 
 //order components //WEBP
 //selec imgs
-//commit para subida new heroku
+//commit para subida create heroku
