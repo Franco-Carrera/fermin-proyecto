@@ -67,16 +67,14 @@ export const getData = (key, operator, value) => {
   return new Promise((resolve, reject) => {
     const collectionQuery =
       key && operator && value
-        ? query(collection(db, "items"), where(key, operator, value))
-        : collection(db, "items");
+        ? query(collection(db, "fotografia"), where(key, operator, value))
+        : collection(db, "fotografia");
     getDocs(collectionQuery)
       .then((querySnapshot) => {
         const links = querySnapshot.docs.map((doc) => {
-          // console.log(doc);
           return { id: doc.id, ...doc.data() };
         });
         console.log(links);
-
         resolve(links);
       })
       .catch((err) => {
@@ -91,8 +89,8 @@ export const getLinks = (key, operator, value) => {
   return new Promise((resolve, reject) => {
     const collectionQuery =
       key && operator && value
-        ? query(collection(db, "enlaces"), where(key, operator, value))
-        : collection(db, "enlaces");
+        ? query(collection(db, "diseños"), where(key, operator, value))
+        : collection(db, "diseños");
     getDocs(collectionQuery)
       .then((querySnapshot) => {
         const links = querySnapshot.docs.map((doc) => {

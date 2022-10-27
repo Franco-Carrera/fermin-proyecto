@@ -9,8 +9,8 @@ const ItemList = ({ itemData }) => {
       ))} */}
 
       <figure>
-        <a href={`/category/${itemData.category}#${itemData.descriptionId}`}>
-          <img src={itemData.imgItem} alt={texts.texts.Galery.FigureOne} />
+        <a href={`/category/${itemData.category}#${itemData.modalId}`}>
+          <img src={itemData.imgPhoto} alt={texts.texts.Galery.FigureOne} />
         </a>
       </figure>
     </>

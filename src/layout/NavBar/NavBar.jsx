@@ -21,9 +21,6 @@ const NavBar = () => {
           <a href="#home" className="Option">
             <button className="navbar__item">Inicio</button>
           </a>
-          <a href="#work" className="Option">
-            <button className="navbar__item">Trabajos</button>
-          </a>
           <a href="#about" className="Option">
             <button className="navbar__item">Sobre mí</button>
           </a>

@@ -8,10 +8,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <section
-        id="about"
-        className="about sectionChange sectionChangeAnimation"
-      >
+      <section id="about" className="about sectionChange">
         <article>
           <aside className="about__col__circle__and__img">
             <ReactSVG

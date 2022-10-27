@@ -12,11 +12,16 @@ const ItemTwo = ({ linkData }) => {
         </figure>
       ) : (
         <figure>
-          <a href={`/category/${linkData.category}#${linkData.descriptionId}`}>
-            <img src={linkData.imgGen} alt={texts.texts.Design.imagenDesign} />
+          <a href={`/category/${linkData.category}#${linkData.modalId}`}>
+            {/* antes como descriptionId */}
+            <img
+              src={linkData.imgDesign}
+              alt={texts.texts.Design.imagenDesign}
+            />
           </a>
         </figure>
       )}
+      {/* funcionaría esta segunda opción */}
 
       {/* si existe cambia a href */}
     </>

@@ -5,6 +5,12 @@ import { getCategories } from "../../../utils/firebaseConfig";
 import { getLinks } from "../../../utils/firebaseConfig";
 import { ReactSVG } from "react-svg";
 
+import first__image from "../../../assets/image/design__image__one.jpg";
+import second__image from "../../../assets/image/design__image__two.jpg";
+import three__image from "../../../assets/image/design__image__three.jpg";
+import four__image from "../../../assets/image/design__image__four.jpg";
+import five__image from "../../../assets/image/design__image__five.jpg";
+
 import { NavLink } from "react-router-dom";
 import texts from "../data/Spaces.texts.json";
 import ItemListTwo from "../../../components/ItemListTwo";
@@ -17,9 +23,11 @@ const Design = () => {
   const { categoryid } = useParams();
 
   useEffect(() => {
-    getLinks("category", "==", categoryid)
-      .then((res) => setLinks(res))
-      .catch((err) => console.error(err));
+    if (categoryid) {
+      getLinks("category", "==", categoryid)
+        .then((res) => setLinks(res))
+        .catch((err) => console.error(err));
+    }
   }, [categoryid]);
 
   const navLinkStyles = ({ isActive }) => {
@@ -43,7 +51,7 @@ const Design = () => {
 
   return (
     <>
-      <aside className="main__top__info sectionChange galery__text__top">
+      <aside className="galery__text__top">
         <h1>{texts.texts.Design.titleDesign}</h1>
 
         <aside className="line-height">
@@ -51,7 +59,7 @@ const Design = () => {
         </aside>
       </aside>
 
-      <header className="galery__types__fotography sectionChange">
+      <header className="galery__photodesign__types sectionChange">
         <aside>
           <div className="radio">
             {categories?.map((category) => (
@@ -77,15 +85,64 @@ const Design = () => {
         </aside>
       </header>
 
-      <main className="galery__photography__container galery__desing__container sectionChange">
+      <main className="galery__photodesign__container sectionChange">
         <ReactSVG
           src={rectangle__galery}
           alt={texts.texts.GraphicRectangle}
           className="rectangle__galery"
         />
-        {links.map((link) => (
-          <ItemListTwo key={link.id} linkData={link} />
-        ))}
+        {categoryid ? (
+          links.map((link) => <ItemListTwo key={link.id} linkData={link} />)
+        ) : (
+          <>
+            <figure>
+              <a href="#trabajo-design-1">
+                <img src={first__image} alt={texts.texts.Galery.FigureOne} />
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#trabajo-design-2">
+                <img
+                  src={second__image}
+                  alt={texts.texts.Galery.FigureTwo}
+                  style={{ height: "400px" }}
+                />
+              </a>
+            </figure>
+
+            <figure className="figure__img__three">
+              <a href="#trabajo-design-3">
+                <img
+                  src={three__image}
+                  alt={texts.texts.Galery.FigureThree}
+                  style={{ height: "600px" }}
+                />
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#trabajo-design-4">
+                <img
+                  // className="img__four__galery"
+                  src={four__image}
+                  alt="{texts.texts.Design.FigureFour}"
+                  style={{ height: "430px" }}
+                />
+              </a>
+            </figure>
+
+            <figure>
+              <a href="#trabajo-design-5">
+                <img
+                  src={five__image}
+                  alt="{texts.texts.Galery.FigureFive}"
+                  style={{ height: "430px" }}
+                />
+              </a>
+            </figure>
+          </>
+        )}
       </main>
 
       {links.map((link) => (

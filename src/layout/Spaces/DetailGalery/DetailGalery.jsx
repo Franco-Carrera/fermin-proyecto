@@ -1,29 +1,38 @@
 import "./DetailGalery.css";
-import first__image from "../../../assets/image/first__image__galery.webp";
-import second__image from "../../../assets/image/second__image__galery.webp";
-import three__image from "../../../assets/image/three__image__galery.webp";
+import { useEffect, useState } from "react";
+import { getCategoriesTwo, getData } from "../../../utils/firebaseConfig";
+import { useParams } from "react-router-dom";
+import first__image from "../../../assets/image/fotography__image__one.jpg";
+import second__image from "../../../assets/image/fotography__image__two.jpg";
+import three__image from "../../../assets/image/fotography__image__three.jpg";
+import four__image from "../../../assets/image/fotography__image__four.jpg";
+import five__image from "../../../assets/image/fotography__image__five.jpg";
+// import first__image from "../../../assets/image/first__image__galery.webp";
+// import second__image from "../../../assets/image/second__image__galery.webp";
+// import three__image from "../../../assets/image/three__image__galery.webp";
 import rectangle__galery from "../../../assets/image/RectangleDetailGalery.svg";
+
 import close__modal from "../../../assets/icons/closeModal.svg";
 import arrow__left__modal from "../../../assets/icons/arrowLeftModal.svg";
 import arrow__right__modal from "../../../assets/icons/arrowRightModal.svg";
 import frick__galery from "../../../assets/icons/flickrDetail.svg";
+import circle__six from "../../../assets/image/Circle-6.svg";
 import { ReactSVG } from "react-svg";
 import texts from "../data/Spaces.texts.json";
-import circle__six from "../../../assets/image/Circle-6.svg";
+
 import { FaBehance } from "react-icons/fa";
-import { getCategoriesTwo, getData } from "../../../utils/firebaseConfig";
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+
 import ItemList from "../../../components/ItemList";
 import { NavLink } from "react-router-dom";
 import Modal from "../Modal/Modal";
 
-//Queremos ver si podemos tener un DetailDesign así
+//colocar los texts correspondientes.
 
 const DetailGalery = () => {
   const { categoryid } = useParams();
   const [categoriesTwo, setCategoriesTwo] = useState();
   const [items, setItems] = useState([]);
+  //const [desactive, setDesactive] = useState(false);
 
   const navLinkStyles = ({ isActive }) => {
     return {
@@ -52,6 +61,11 @@ const DetailGalery = () => {
       });
   }, []);
 
+  /*const desactiveModal = () => {
+    setDesactive(true);
+    console.log("estoy haciendo click para desactivar modal");
+  };*/
+
   return (
     <>
       <section className="detail__galery sectionChangeStart">
@@ -64,35 +78,33 @@ const DetailGalery = () => {
           </small>
         </aside>
 
-        <section className="galery__types__fotography">
-          <header className="galery__types__fotography sectionChange">
-            <aside>
-              <div className="radio">
-                {categoriesTwo?.map((category) => (
-                  <NavLink
-                    key={category.id}
-                    to={`/category/${category.id}`}
-                    className="NavLinkWork"
-                    style={navLinkStyles}
-                  >
-                    <input
-                      className="radio__input"
-                      type="radio"
-                      value="option1"
-                      name="myRadio"
-                      id={category.labelFor}
-                    />
-                    <label className="pointer" htmlFor={category.labelFor}>
-                      {category.description}
-                    </label>
-                  </NavLink>
-                ))}
-              </div>
-            </aside>
-          </header>
-        </section>
+        <header className="galery__photodesign__types sectionChange">
+          <aside>
+            <div className="radio">
+              {categoriesTwo?.map((category) => (
+                <NavLink
+                  key={category.id}
+                  to={`/category/${category.id}`}
+                  className="NavLinkWork"
+                  style={navLinkStyles}
+                >
+                  <input
+                    className="radio__input"
+                    type="radio"
+                    value="option1"
+                    name="myRadio"
+                    id={category.labelFor}
+                  />
+                  <label className="pointer" htmlFor={category.labelFor}>
+                    {category.description}
+                  </label>
+                </NavLink>
+              ))}
+            </div>
+          </aside>
+        </header>
 
-        <main className="galery__photography__container">
+        <main className="galery__photodesign__container">
           <ReactSVG
             src={rectangle__galery}
             alt={texts.texts.GraphicRectangle}
@@ -126,13 +138,20 @@ const DetailGalery = () => {
 
               <figure>
                 <a href="#trabajo-4">
-                  <img src={first__image} alt={texts.texts.Galery.FigureOne} />
+                  <img
+                    className="img__four__galery"
+                    src={four__image}
+                    alt="{texts.texts.Galery.FigureFour}"
+                  />
                 </a>
               </figure>
 
               <figure>
                 <a href="#trabajo-5">
-                  <img src={second__image} alt={texts.texts.Galery.FigureTwo} />
+                  <img
+                    src={five__image}
+                    alt="{texts.texts.Galery.FigureFive}"
+                  />
                 </a>
               </figure>
             </>
@@ -143,7 +162,11 @@ const DetailGalery = () => {
           <Modal key={item.id} itemData={item} />
         ))}
 
-        <article className="modal__container" id="trabajo-1">
+        <article
+          className="modal__container"
+          id="trabajo-1"
+          // onClick={() => desactiveModal()}
+        >
           <main className="modal__content">
             <a href="#cerrar" className="modal__close">
               <img src={close__modal} alt={texts.texts.Galery.closeModal} />
@@ -241,7 +264,7 @@ const DetailGalery = () => {
             </a>
 
             <img
-              src={first__image}
+              src={four__image}
               alt="Imagen sobre la que se hizo click vista en Modal 4"
             />
           </main>
@@ -267,7 +290,7 @@ const DetailGalery = () => {
             </a>
 
             <img
-              src={second__image}
+              src={five__image}
               alt="Imagen sobre la que se hizo click vista en Modal 5"
             />
           </main>
