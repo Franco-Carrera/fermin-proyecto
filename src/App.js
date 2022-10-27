@@ -32,3 +32,4 @@ export default App;
 //order components //WEBP
 //selec imgs
 //commit para subida create heroku, again
+//option hosting desde clase backend.
